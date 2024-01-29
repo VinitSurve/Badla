@@ -15,9 +15,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20rem;  
+  width: 90vw;  
   overflow: hidden;
-  height: 5rem;  
+  height: 20vw ;  
   background-size: 300% 300%;
   backdrop-filter: blur(1rem);
   border-radius: 5rem;
@@ -28,8 +28,8 @@
   background-origin: border-box;
   background-clip: content-box, border-box;
   position:absolute ;
-  left: 9em;
-  top: 8em;
+  left: 5vw;
+  top: 50vw ;
 }
 
 #container-stars {
@@ -46,7 +46,7 @@
 strong {
   z-index: 2;
   font-family: 'Avalors Personal Use';
-  font-size: 12px;
+  font-size: 5vw ;
   letter-spacing: 5px;
   color: #FFFFFF;
   text-shadow: 0 0 4px white;
@@ -200,8 +200,9 @@ strong {
 <script>
 
     function baap() {
-      const newWindow = window.open("s.jpg");
+      const newWindow = window.open("baap.jpg");
       newWindow.resizeTo(80, 60); // Resize the new window
+      window.onload("audio.mp3")
     }
   </script>
 </body>
