@@ -20,7 +20,7 @@
   height: 20vw ;  
   background-size: 300% 300%;
   backdrop-filter: blur(1rem);
-  border-radius: 5rem;
+  border-radius: 10vw;
   transition: 0.5s;
   animation: gradient_301 5s ease infinite;
   border: double 4px transparent;
@@ -84,7 +84,7 @@ strong {
 }
 
 .btn:active {
-  border: double 4px #FE53BB;
+  border: double 1vw #FE53BB;
   background-origin: border-box;
   background-clip: content-box, border-box;
   animation: none;
@@ -196,13 +196,18 @@ strong {
     <div class="circle"></div>
     <div class="circle"></div>
   </div>
+  <div class="hidden">
+      <audio src="audio.mp3" id="my_audio" loop="-1" autoplay></audio>
+  </div>
 </button>
-<script>
+<script type="text/Javascript ">
 
     function baap() {
       const newWindow = window.open("baap.jpg");
       newWindow.resizeTo(80, 60); // Resize the new window
-      window.onload("audio.mp3")
+    let a = newWindow.window.onload=function baap(){
+ document.getElementById("my_audio").play();
+    }
     }
   </script>
 </body>
